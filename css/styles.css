@@ -160,7 +160,7 @@ text-align: center;
 letter-spacing: 0.03em;
 color: var(--black-color);
 padding: 0px 40px;
-margin-bottom: 30px;
+margin-bottom: 12px;
 }
 
 .modal-form{
@@ -168,26 +168,33 @@ margin-bottom: 30px;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	width: 100%;	
+	width: 100%;
 	gap: 28px;
 }
 
-.modal-input-form::before{
-	content: "name";
-	display: flex;
-	align-items: flex-end;
-	transition: 250ms cubic-bezier(0.2, 0, 0.2, 1);
-	top: -300px;
+.form-box{
+	width: 448px;
+}
+
+form label{
+font-weight: 400;
+font-size: 12px;
+line-height: 14px;
+padding-top: 10px;
+letter-spacing: 0.01em;
+color: var(--grey-color);
 }
 
 .modal-input-form{
+display: block;
 width: 448px;
 height: 40px;
 border: 1px solid rgba(33, 33, 33, 0.2);
 border-radius: 4px;
+margin-bottom: 10px;
 }
 
-.coments{	
+.comments{
 	height: 120px;
 	margin-bottom: 20px;
 	font-weight: 400;
@@ -196,16 +203,31 @@ line-height: 14px;
 letter-spacing: 0.01em;
 }
 
-.check{
-	display: inline-flex;
+.comments::placeholder{
+	padding-left: 16px;
+	padding-top: 12px;
+}
+
+.agreement-box{
+	display: flex;
+	align-items: start;
 	gap: 8px;
-	margin-left: 52px;
-	margin-right: 51px;
+	margin: 0px;
+	width: 425px;
 }
 
 .modal-checkbox{
-	margin-top: -18px;
+	margin-top: 4px
 }
+
+.agreement{
+	font-weight: 400;
+font-size: 14px;
+line-height: 24px;
+letter-spacing: 0.03em;
+color: var(--grey-color);
+}
+
 
 .modal-button-send{
 	width: 200px;
@@ -654,7 +676,7 @@ li > .icon-ig {
 
 button.sub-button {
 	width: 200px;
-	height: 50px;	
+	height: 50px;
 	padding: 0;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 	background-color: var(--highlight-color);
