@@ -130,3 +130,63 @@ aside ul li > .icon-linkedin{
 }
 
 
+.footer-form {
+	margin: 12px 0px 0px 93px;
+}
+
+.footer-form-tittle {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 16px;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+
+	margin-bottom: 20px;
+
+	color: var(--white-color);
+}
+
+.footer-div {
+	display: inline;
+	width: 580px;
+	height: auto;
+}
+
+.footer-input-form {
+	width: 358px;
+	height: 50px;
+	margin-right: 12px;
+	padding: 15px 0px 15px 16px;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 20px;
+	color: rgba(255, 255, 255, 0.6);
+	background-color: var(--bg-color);
+
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+	border-radius: 4px;
+}
+
+button.sub-button {
+	width: 200px;
+	height: 50px;
+	padding: 0;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	background-color: var(--highlight-color);
+	color: var(--white-color);
+}
+
+button.sub-button > p {
+	display: inline;
+	width: 80px;
+}
+
+.icon-telegram {
+	width: 24px;
+	height: 24px;
+	margin-left: 8px;
+    fill: var(--white-color);
+}
