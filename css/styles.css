@@ -152,18 +152,23 @@ h1.main-tittle {
 	margin-top: 8px;
 }
 
-.modal-tittle{
-font-weight: 700;
-font-size: 20px;
-line-height: 23px;
-text-align: center;
-letter-spacing: 0.03em;
-color: var(--black-color);
-padding: 0px 40px;
-margin-bottom: 12px;
+.close-button:hover{
+	background-color: var(--white-color);
+	color: var(--highlight-color);
 }
 
-.modal-form{
+.modal-tittle {
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 23px;
+	text-align: center;
+	letter-spacing: 0.03em;
+	color: var(--black-color);
+	padding: 0px 40px;
+	margin-bottom: 12px;
+}
+
+.modal-form {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -172,43 +177,119 @@ margin-bottom: 12px;
 	gap: 28px;
 }
 
-.form-box{
+form label {
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 14px;
+	padding-top: 10px;
+	letter-spacing: 0.01em;
+	color: var(--grey-color);
+}
+
+.modal-input-form {
+	display: block;
 	width: 448px;
+	height: 40px;
+	border: 1px solid rgba(33, 33, 33, 0.2);
+	border-radius: 4px;
+	margin-bottom: 10px;
+	outline: none;
+	padding-left: 42px;
 }
 
-form label{
-font-weight: 400;
-font-size: 12px;
-line-height: 14px;
-padding-top: 10px;
-letter-spacing: 0.01em;
-color: var(--grey-color);
+.modal-input-form:focus,
+.modal-input-form:hover{
+	border: 1px solid;
+	border-color: var(--highlight-color);
 }
 
-.modal-input-form{
-display: block;
-width: 448px;
-height: 40px;
-border: 1px solid rgba(33, 33, 33, 0.2);
-border-radius: 4px;
-margin-bottom: 10px;
+.modal-input-group-name {
+	position: relative;
 }
 
-.comments{
+.modal-input-group-name:hover .modal-input-form,
+.modal-input-group-name:hover .icon-person{
+	fill: var(--highlight-color);
+	border-color: var(--highlight-color);
+}
+
+.icon-person {
+	width: 12px;
+	height: 12px;
+	top: 14px;
+	left: 15px;
+	position: absolute;
+}
+
+.modal-input-form:focus + .icon-person,
+.modal-input-form:hover + .icon-person{
+	fill: #2196f3;
+}
+
+.modal-input-group-phone {
+	position: relative;
+}
+
+.modal-input-group-phone:hover .modal-input-form,
+.modal-input-group-phone:hover .icon-old-phone{
+	fill: var(--highlight-color);
+	border-color: var(--highlight-color);
+}
+
+.icon-old-phone {
+	position: absolute;
+	width: 12px;
+	height: 12px;
+	top: 14px;
+	left: 15px;
+}
+
+.modal-input-form:focus + .icon-old-phone,
+.modal-input-form:hover + .icon-old-phone{
+	fill: #2196f3;
+}
+
+.modal-input-group-email {
+	position: relative;
+}
+
+.modal-input-group-email:hover .modal-input-form,
+.modal-input-group-email:hover .icon-black-envelope{
+	fill: var(--highlight-color);
+	border-color: var(--highlight-color);
+}
+
+.icon-black-envelope {
+	position: absolute;
+	width: 12px;
+	height: 12px;
+	top: 14px;
+	left: 15px;
+}
+
+.modal-input-form:focus + .icon-black-envelope,
+.modal-input-form:hover + .icon-black-envelope{
+	fill: #2196f3;
+}
+
+.comments {
 	height: 120px;
 	margin-bottom: 20px;
 	font-weight: 400;
-font-size: 12px;
-line-height: 14px;
-letter-spacing: 0.01em;
-}
-
-.comments::placeholder{
-	padding-left: 16px;
+	font-size: 12px;
+	line-height: 14px;
+	letter-spacing: 0.01em;
 	padding-top: 12px;
+	padding-left: 12px;
 }
 
-.agreement-box{
+label .comments::placeholder {
+	position: absolute;
+	top: 12px;
+	left: 12px;
+}
+
+.agreement-box {
 	display: flex;
 	align-items: start;
 	gap: 8px;
@@ -216,27 +297,26 @@ letter-spacing: 0.01em;
 	width: 425px;
 }
 
-.modal-checkbox{
-	margin-top: 4px
+.modal-checkbox {
+	margin-top: 4px;
 }
 
-.agreement{
+.agreement {
 	font-weight: 400;
-font-size: 14px;
-line-height: 24px;
-letter-spacing: 0.03em;
-color: var(--grey-color);
+	font-size: 14px;
+	line-height: 24px;
+	letter-spacing: 0.03em;
+	color: var(--grey-color);
 }
 
-
-.modal-button-send{
+.modal-button-send {
 	width: 200px;
 	height: 50px;
 	color: var(--white-color);
 	background-color: var(--highlight-color);
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-border-radius: 4px;
-margin: 6px 164px 40px 164px;
+	border-radius: 4px;
+	margin: 6px 124px 40px 124px;
 }
 
 /*
@@ -683,7 +763,7 @@ button.sub-button {
 	color: var(--white-color);
 }
 
-button.sub-button > p{
+button.sub-button > p {
 	display: inline;
 	width: 80px;
 }
